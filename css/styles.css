@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Chivo', sans-serif;
+}
+
+.wrap {
+  background: pink;
+  background-image: url("http://i.imgur.com/YTljvNf.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 35vw;
+  margin: 0.5em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrap img {
+  width: 100%;
+  -webkit-animation: imgAnimation 5s infinite;
+   -moz-animation: imgAnimation 5s infinite;
+   -o-animation: imgAnimation 5s infinite;
+    animation: imgAnimation 5s infinite;
+
+}
+
+@keyframes imgAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes imgAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes imgAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes imgAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
