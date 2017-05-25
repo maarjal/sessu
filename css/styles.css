@@ -35,6 +35,12 @@ body {
 
 }
 
+@media screen and (max-width: 900px) {
+  .wrap {
+    width: 80vw;
+  }
+}
+
 @keyframes imgAnimation {
   0%   { opacity:1; }
   50%  { opacity:0; }
